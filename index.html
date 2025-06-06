@@ -1,131 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>$VIRGIDREX - Separando seu dinheiro do controle central</title>
-  <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$VIRGIDREX – Separando seu dinheiro do controle central</title>
+  <link rel="icon" type="image/png" href="https://virgidrex.xyz/favicon.png">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #ff6600;
-      color: white;
+      font-family: 'Arial', sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
+      text-align: center;
     }
     .hero {
-      text-align: center;
-      padding: 60px 20px;
+      background: #ff5500;
+      padding: 60px 20px 40px;
     }
     .hero img {
-      max-width: 180px;
+      width: 140px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
     }
     h1 {
-      font-family: 'Anton', sans-serif;
-      font-size: 2.5em;
-      text-shadow: 2px 2px black;
-      margin-top: 20px;
+      font-size: 36px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px 0 #000;
     }
     .subtitle {
-      margin-top: 10px;
-      font-size: 1.1em;
-    }
-    .buttons {
-      margin-top: 30px;
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #fff5cc;
     }
     .buttons a {
       display: inline-block;
-      padding: 14px 22px;
       margin: 8px;
-      border-radius: 8px;
-      font-weight: bold;
+      padding: 12px 20px;
+      border-radius: 6px;
       text-decoration: none;
+      font-weight: bold;
     }
-    .pancake { background: yellow; color: black; }
-    .bscscan { background: red; color: white; }
-    .pinklock { background: black; color: yellow; }
+    .yellow-button { background-color: #ffc107; color: #000; }
+    .red-button { background-color: #dc3545; color: #fff; }
+    .black-button { background-color: #000; color: #fff; }
+
     .section {
-      background: #1a1a1a;
-      padding: 40px 20px;
-      text-align: center;
+      padding: 50px 20px;
+      background-color: #111;
     }
     .section h2 {
-      color: #FFD700;
-      font-family: 'Anton', sans-serif;
+      color: #ffc107;
     }
-    .tokenomics {
+    .highlight {
+      font-weight: bold;
+      color: #ffd700;
+    }
+    .tokenomics-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 15px;
-      margin-top: 30px;
+      gap: 20px;
+      margin-top: 20px;
     }
-    .card {
-      background: #333;
-      padding: 15px;
-      border-radius: 10px;
-      width: 230px;
+    .tokenomics-grid div {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 8px;
+      min-width: 220px;
     }
-    .roadmap, .comunidade {
+    .roadmap ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .roadmap li {
+      margin: 10px 0;
+    }
+    .social-section {
+      background: #ff5500;
       padding: 40px 20px;
-      background: #000;
-      text-align: center;
     }
-    .comunidade a {
-      margin: 10px;
-      background: #ffc107;
-      color: black;
-      text-decoration: none;
-      padding: 12px 20px;
-      display: inline-block;
-      border-radius: 6px;
+    .social-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .social-grid div {
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 20px;
+      border-radius: 10px;
+      min-width: 180px;
+      opacity: 0.6;
+      border: 1px dashed #fff;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .social-grid div:hover {
+      opacity: 1;
+      transform: scale(1.03);
     }
   </style>
 </head>
 <body>
   <div class="hero">
-    <img src="favicon.png" alt="$VIRGIDREX Logo">
+    <img src="https://virgidrex.xyz/favicon.png" alt="Logo $VIRGIDREX">
     <h1>SEPARANDO SEU DINHEIRO DO CONTROLE CENTRAL</h1>
     <p class="subtitle">A memecoin que rompe com o sistema, mas ainda conversa com ele.</p>
     <div class="buttons">
-      <a class="pancake" href="https://pancakeswap.finance/swap?outputCurrency=0x65a7c8e82Ec011c168b6eF2968E2A0cc50194fE">🛒 Comprar no PancakeSwap</a>
-      <a class="bscscan" href="https://bscscan.com/token/0x65a7c8e82Ec011c168b6eF2968E2A0cc50194fE">🧾 Ver contrato no BscScan</a>
-      <a class="pinklock" href="https://www.pinksale.finance/pinklock/record/1324316?chain=BSC">🔒 Ver travamento na PinkLock</a>
+      <a href="https://pancakeswap.finance/swap?outputCurrency=0x653Ac7e8E2Ec011c168b6eF2968E2A0cc50194FE" class="yellow-button">🟡 Comprar no PancakeSwap</a>
+      <a href="https://bscscan.com/token/0x653Ac7e8E2Ec011c168b6eF2968E2A0cc50194FE" class="red-button">🔴 Ver contrato na BscScan</a>
+      <a href="https://www.pinksale.finance/pinklock/bsc/record/1324473" class="black-button">🔒 Ver travamento 1</a>
+      <a href="https://www.pinksale.finance/pinklock/bsc/record/1324316" class="black-button">🔒 Ver travamento 2</a>
     </div>
   </div>
 
   <div class="section">
-    <h2>O QUE É O $VIRGIDREX?</h2>
+    <h2>O QUE É O <span class="highlight">$VIRGIDREX</span>?</h2>
     <p>$VIRGIDREX nasceu da separação mais comentada do Brasil — Zé Felipe & Virgínia — e representa muito mais do que um meme: representa a separação do seu dinheiro do controle central. É leve, mas é sério. É pop, mas é descentralizado.</p>
-    <p><strong>"Como eles, nós também seguimos caminhos diferentes. Mas continuamos conectados."</strong></p>
+    <blockquote><strong>"Como eles, nós também seguimos caminhos diferentes. Mas continuamos conectados."</strong></blockquote>
   </div>
 
   <div class="section">
     <h2>TOKENOMICS</h2>
-    <div class="tokenomics">
-      <div class="card"><strong>Supply total</strong><br>69.000.000.000</div>
-      <div class="card"><strong>Taxa de swap</strong><br>1%</div>
-      <div class="card"><strong>Liquidez travada</strong><br>✅ Confirmado</div>
-      <div class="card"><strong>Contrato</strong><br>0x65a7...94fE</div>
-      <div class="card"><strong>Rede</strong><br>Binance Smart Chain</div>
-      <div class="card"><strong>Lançamento</strong><br>Junho/2025</div>
+    <div class="tokenomics-grid">
+      <div><strong>Supply total</strong><br>69.000.000.000</div>
+      <div><strong>Taxa de swap</strong><br>1%</div>
+      <div><strong>Liquidez travada</strong><br>✅ Confirmado</div>
+      <div><strong>Contrato</strong><br>0x653Ac7...50194FE</div>
+      <div><strong>Rede</strong><br>Binance Smart Chain (BSC)</div>
+      <div><strong>Lançamento</strong><br>Junho/2025</div>
     </div>
   </div>
 
-  <div class="roadmap">
+  <div class="section roadmap">
     <h2>ROADMAP $VIRGIDREX</h2>
-    <p>🧠 Fase 1: Lançamento stealth, liquidez travada, branding viral<br>
-       📣 Fase 2: Comunidade Telegram, memes, parcerias de conteúdo<br>
-       📊 Fase 3: Listagem em rastreadores, campanha crítica ao Drex<br>
-       👁️ Fase 4: NFTs do Olho, staking simbólico, expansão de holders</p>
+    <ul>
+      <li>🔥 Fase 1 – Lançamento stealth, liquidez travada, branding viral</li>
+      <li>📢 Fase 2 – Comunidade Telegram, memes, parcerias de conteúdo</li>
+      <li>📈 Fase 3 – Listagem em rastreadores, início de campanha crítica ao Drex</li>
+      <li>👁️ Fase 4 – NFTs do Olho, staking simbólico, expansão de holders</li>
+    </ul>
   </div>
 
-  <div class="comunidade">
+  <div class="social-section">
     <h2>JUNTE-SE À COMUNIDADE $VIRGIDREX</h2>
     <p>Separar o dinheiro do controle é um movimento coletivo.</p>
-    <a href="#">📢 Entrar no Telegram</a>
-    <a href="#">✖️ Seguir no Twitter</a>
-    <a href="#">😎 Compartilhar memes</a>
+    <div class="social-grid">
+      <div>🗝️ <strong>Entrar no Telegram</strong><br><em>(em breve)</em></div>
+      <div>𝕏 <strong>Seguir no Twitter</strong><br><em>(em breve)</em></div>
+      <div>😄 <strong>Compartilhar memes</strong><br><em>(em breve)</em></div>
+    </div>
   </div>
 </body>
 </html>
