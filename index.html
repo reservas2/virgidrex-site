@@ -1,174 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="$VIRGIDREX é a memecoin que simboliza a separação financeira do sistema centralizado. Junte-se ao movimento!" />
-  <title>$VIRGIDREX – A Revolução Cripto Pop</title>
-  <link rel="icon" href="logo.png" type="image/png" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$VIRGIDREX – A memecoin da separação</title>
+  <meta name="description" content="$VIRGIDREX é uma memecoin baseada na separação simbólica do sistema financeiro centralizado. Compre, compartilhe e se junte à revolução." />
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0c0c0c url('chips-fundo.png') no-repeat center top;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: #0d0d0d url('chips-fundo.png') no-repeat center center fixed;
       background-size: cover;
-      color: #ffffff;
-      overflow-x: hidden;
     }
-
-    header {
-      text-align: center;
+    .hero {
       padding: 80px 20px 40px;
-      background: rgba(0,0,0,0.7);
+      text-align: center;
+      background: rgba(0, 0, 0, 0.85);
     }
-
-    header img {
-      width: 160px;
-      margin-bottom: 20px;
+    .hero img {
+      width: 180px;
+      margin-bottom: 25px;
     }
-
-    header h1 {
-      font-size: 40px;
-      color: #ffcc00;
-      text-shadow: 2px 2px #000;
-      margin-bottom: 10px;
+    h1 {
+      font-size: 44px;
+      font-weight: bold;
+      color: #FFD700;
+      margin-bottom: 15px;
     }
-
     .subtitle {
-      font-size: 18px;
+      font-size: 22px;
       color: #ccc;
-      max-width: 600px;
-      margin: 0 auto 30px;
+      margin-bottom: 35px;
     }
-
     .buttons a {
       display: inline-block;
-      margin: 10px 10px;
-      padding: 14px 24px;
+      margin: 10px;
+      padding: 16px 26px;
       border-radius: 8px;
       font-weight: bold;
       text-decoration: none;
-      transition: 0.3s;
+      transition: 0.3s ease;
+      font-size: 16px;
     }
-
-    .yellow-button { background-color: #ffc107; color: #000; }
-    .red-button { background-color: #e53935; color: #fff; }
-    .black-button { background-color: #212121; color: #fff; }
-    .buttons a:hover { transform: scale(1.05); }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-      background: rgba(0,0,0,0.6);
-      border-radius: 12px;
+    .yellow-button { background: #FFD700; color: #000; }
+    .red-button { background: #dc3545; color: #fff; }
+    .black-button { background: #111; color: #fff; border: 1px solid #fff; }
+    .section {
+      padding: 80px 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.75);
       margin-top: 40px;
     }
-
-    h2 {
-      font-size: 28px;
-      color: #ffd700;
-      margin-bottom: 20px;
+    .highlight {
+      color: #FFD700;
     }
-
-    .tokenomics-grid, .social-grid, .roadmap ul {
+    .tokenomics-grid, .social-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
       justify-content: center;
-      list-style: none;
-      padding: 0;
-    }
-
-    .tokenomics-grid div, .social-grid div {
-      background: #111;
-      padding: 20px;
-      border-radius: 8px;
-      min-width: 220px;
-      text-align: center;
-      border: 1px solid #333;
-    }
-
-    .social-grid div {
-      opacity: 0.6;
-      transition: all 0.3s;
-    }
-    .social-grid div:hover {
-      opacity: 1;
-      transform: scale(1.05);
-    }
-
-    footer {
-      text-align: center;
-      font-size: 14px;
-      color: #777;
-      padding: 20px;
+      gap: 30px;
       margin-top: 40px;
     }
-
+    .tokenomics-grid div, .social-grid div {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid #555;
+      padding: 30px;
+      border-radius: 12px;
+      min-width: 240px;
+      font-size: 18px;
+    }
+    ul.checklist {
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 18px;
+    }
+    ul.checklist li {
+      margin-bottom: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      font-size: 15px;
+      color: #aaa;
+      background: #000;
+    }
     @media (max-width: 768px) {
-      header h1 { font-size: 28px; }
-      .buttons a { padding: 10px 16px; font-size: 14px; }
+      h1 { font-size: 32px; }
+      .hero img { width: 120px; }
+      .buttons a { font-size: 14px; padding: 12px 20px; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Logo $VIRGIDREX" />
-    <h1>SEPARANDO SEU DINHEIRO DO CONTROLE CENTRAL</h1>
-    <p class="subtitle">A memecoin brasileira que representa liberdade, sátira e uma nova era de descentralização.</p>
+  <div class="hero">
+    <img src="logo.png" alt="Logo $VIRGIDREX">
+    <h1>$VIRGIDREX</h1>
+    <p class="subtitle">Separando seu dinheiro do controle central com humor, crítica e propósito.</p>
     <div class="buttons">
-      <a class="yellow-button" href="https://pancakeswap.finance/swap?outputCurrency=0x653Ac7e8E2Ec011c168b6eF2968E2A0cc50194FE">🟡 Comprar</a>
-      <a class="red-button" href="https://bscscan.com/token/0x653Ac7e8E2Ec011c168b6eF2968E2A0cc50194FE">🔴 Ver contrato</a>
-      <a class="black-button" href="https://www.pinksale.finance/pinklock/bsc/record/1324473">🔒 Travamento 1</a>
-      <a class="black-button" href="https://www.pinksale.finance/pinklock/bsc/record/1324316">🔒 Travamento 2</a>
+      <a href="https://pancakeswap.finance/swap?outputCurrency=0x653Ac7e8E2Ec011c168b6eF2968E2A0cc50194FE" class="yellow-button">🟡 Comprar no PancakeSwap</a>
+      <a href="https://bscscan.com/token/0x653Ac7e8E2Ec011c168b6eF2968E2A0cc50194FE" class="red-button">🔴 Ver contrato</a>
+      <a href="https://www.pinksale.finance/pinklock/bsc/record/1324473" class="black-button">🔒 Lock 1</a>
+      <a href="https://www.pinksale.finance/pinklock/bsc/record/1324316" class="black-button">🔒 Lock 2</a>
     </div>
-  </header>
+  </div>
 
-  <section>
-    <h2>🔥 PROMESSA DE LIQUIDEZ</h2>
-    <p><strong>Compromisso:</strong> A liquidez do projeto será aumentada até <strong>1.0 BNB</strong> travado nos próximos ciclos. Transparência e seriedade desde o primeiro bloco.</p>
-  </section>
+  <div class="section">
+    <h2>O que é o <span class="highlight">$VIRGIDREX</span>?</h2>
+    <p>Inspirado pela separação de Zé Felipe e Virgínia, $VIRGIDREX representa o rompimento simbólico com o sistema financeiro centralizado. É uma memecoin que vai além da zoeira: é um manifesto por liberdade financeira, irreverência e descentralização.</p>
+  </div>
 
-  <section>
-    <h2>O QUE É $VIRGIDREX?</h2>
-    <p>Nascida da separação midiática de Zé Felipe e Virgínia, $VIRGIDREX representa a separação entre você e o sistema financeiro tradicional. Um movimento que mistura humor com a crítica descentralizada do nosso tempo. Como o casal, nos separamos – mas ainda estamos conectados.</p>
-  </section>
-
-  <section>
+  <div class="section">
     <h2>TOKENOMICS</h2>
     <div class="tokenomics-grid">
-      <div><strong>Supply Total</strong><br>69.000.000.000</div>
-      <div><strong>Taxa de Swap</strong><br>1%</div>
-      <div><strong>Liquidez Travada</strong><br>✅ Sim</div>
-      <div><strong>Rede</strong><br>BSC</div>
-      <div><strong>Contrato</strong><br>0x653A...94FE</div>
-      <div><strong>Lançamento</strong><br>Junho/2025</div>
+      <div><strong>Supply total:</strong><br>69.000.000.000</div>
+      <div><strong>Taxa de swap:</strong><br>1%</div>
+      <div><strong>Liquidez travada:</strong><br>✅ Confirmado (Pinksale)</div>
+      <div><strong>Contrato:</strong><br>0x653A...94FE</div>
+      <div><strong>Rede:</strong><br>BSC</div>
+      <div><strong>Meta de liquidez:</strong><br>🔜 1.0 BNB</div>
     </div>
-  </section>
+  </div>
 
-  <section>
+  <div class="section">
     <h2>ROADMAP</h2>
-    <ul>
-      <li>📌 Stealth launch & Branding</li>
-      <li>👨‍👩‍👧‍👦 Construção da comunidade</li>
-      <li>📣 Campanha anti-DREX</li>
-      <li>🧿 NFTs do Olho $VIRGIDREX</li>
+    <ul class="checklist">
+      <li><strong>🔥 Fase 1:</strong> Lançamento stealth + Liquidez inicial + Identidade visual + Site</li>
+      <li><strong>📢 Fase 2:</strong> Twitter, Telegram, memes virais, comunidade</li>
+      <li><strong>📈 Fase 3:</strong> Listagens, campanha contra Drex, marketing</li>
+      <li><strong>👁️ Fase 4:</strong> NFTs, staking simbólico, colaborações</li>
     </ul>
-  </section>
+  </div>
 
-  <section>
-    <h2>JUNTE-SE À COMUNIDADE</h2>
+  <div class="section">
+    <h2>Comunidade $VIRGIDREX</h2>
+    <p>Separar o dinheiro do controle é um movimento coletivo.</p>
     <div class="social-grid">
-      <div>🗝️ Telegram <br><em>em breve</em></div>
-      <div>𝕏 Twitter <br><em>em breve</em></div>
-      <div>🔥 Memes <br><em>em breve</em></div>
+      <div>🔗 Telegram<br><em>(em breve)</em></div>
+      <div>𝕏 Twitter<br><em>(em breve)</em></div>
+      <div>📢 Compartilhar memes<br><em>(em breve)</em></div>
     </div>
-  </section>
+  </div>
 
   <footer>
-    <p>&copy; 2025 $VIRGIDREX. Criptomoedas são de alto risco. Faça sua própria pesquisa (DYOR).</p>
+    <p>© 2025 $VIRGIDREX – Todos os direitos reservados.</p>
+    <p><small>Criptomoedas são ativos de risco. Faça sua própria pesquisa (DYOR).</small></p>
   </footer>
 </body>
 </html>
