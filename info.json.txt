@@ -1,0 +1,8 @@
+{
+  "name": "VIRGIDREX",
+  "symbol": "VIRGIDREX",
+  "decimals": 18,
+  "address": "0x65a7c8e82Ec011c168b6eF2968E2A0cc50194fE",
+  "chainId": 56,
+  "logoURI": "https://raw.githubusercontent.com/reservas2/virgidrex-site/main/token/logo.png"
+}
