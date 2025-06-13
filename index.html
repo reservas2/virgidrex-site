@@ -19,10 +19,10 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "$VIRGIDREX",
-    "url": "https://www.tinaymoveis.com.br", // !! SUBSTITUA PELA URL REAL DO SEU SITE !!
-    "logo": "https://www.tinaymoveis.com.br/logo.png", // !! SUBSTITUA PELA URL REAL DA SUA LOGO !!
+    "url": "https://www.tinaymoveis.com.br",
+    "logo": "https://www.tinaymoveis.com.br/logo.png",
     "description": "$VIRGIDREX é uma memecoin na Binance Smart Chain (BSC) que representa a separação do dinheiro do controle central.",
-    "sameAs": [] // Adicione links de redes sociais aqui, se houver
+    "sameAs": []
   }
   </script>
   <script type="application/ld+json">
@@ -30,15 +30,13 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "$VIRGIDREX",
-    "url": "https://www.tinaymoveis.com.br" // !! SUBSTITUA PELA URL REAL DO SEU SITE !!
-    // Adicione a funcionalidade de busca se aplicável
+    "url": "https://www.tinaymoveis.com.br"
   }
   </script>
-
 </head>
 <body>
   <header class="hero">
-    <img src="logo.png" alt="Logo $VIRGIDREX com olho estilizado"> <!-- Alt text melhorado -->
+    <img src="logo.png" alt="Logo $VIRGIDREX com olho estilizado">
     <h1>SEPARANDO SEU DINHEIRO DO CONTROLE CENTRAL</h1>
     <p class="subtitle">A memecoin que rompe com o sistema, mas ainda conversa com ele.</p>
     <nav class="buttons" aria-label="Links principais">
@@ -55,7 +53,6 @@
       <p>$VIRGIDREX nasceu da separação mais comentada do Brasil — Zé Felipe & Virgínia — e representa muito mais do que um meme: representa a <span class="highlight">separação do seu dinheiro do controle central</span>. É leve, mas é sério. É pop, mas é descentralizado. Uma memecoin na Binance Smart Chain (BSC) com propósito.</p>
       <blockquote>
         <p>"Como eles, nós também seguimos caminhos diferentes. Mas continuamos conectados."</p>
-        <!-- <cite>Opcional: Fonte da citação</cite> -->
       </blockquote>
     </section>
 
@@ -63,9 +60,9 @@
       <h2>TOKENOMICS</h2>
       <div class="tokenomics-grid">
         <div><strong>Supply total</strong><br>69.000.000.000 $VIRGIDREX</div>
-        <div><strong>Taxa de swap</strong><br>1% <small>(Destinada a [ex: queima/marketing])</small></div> <!-- Explicar taxa -->
+        <div><strong>Taxa de swap</strong><br>1% <small>(Destinada a [ex: queima/marketing])</small></div>
         <div><strong>Liquidez travada</strong><br>✅ Confirmado (Pinksale)</div>
-        <div><strong>Contrato (BSC)</strong><br><a href="https://bscscan.com/token/0x653Ac7e8E2Ec011c168b6eF2968E2A0cc50194FE" target="_blank" rel="noopener noreferrer">0x653A...94FE</a></div> <!-- Link no contrato -->
+        <div><strong>Contrato (BSC)</strong><br><a href="https://bscscan.com/token/0x653Ac7e8E2Ec011c168b6eF2968E2A0cc50194FE" target="_blank" rel="noopener noreferrer">0x653A...94FE</a></div>
         <div><strong>Rede</strong><br>Binance Smart Chain (BSC)</div>
         <div><strong>Lançamento</strong><br>Junho/2025</div>
       </div>
@@ -118,9 +115,8 @@
     <h2>JUNTE-SE À COMUNIDADE $VIRGIDREX</h2>
     <p>Separar o dinheiro do controle é um movimento coletivo. Faça parte!</p>
     <div class="social-grid">
-      <!-- !! SUBSTITUA PELOS LINKS REAIS QUANDO DISPONÍVEIS !! -->
       <a href="#" target="_blank" rel="noopener noreferrer" class="social-link telegram-link">
-        <div>🗝️ <strong>Entrar no Telegram</strong><br><em>(em breve)</em></div>
+        <div>😑 <strong>Entrar no Telegram</strong><br><em>(em breve)</em></div>
       </a>
       <a href="#" target="_blank" rel="noopener noreferrer" class="social-link twitter-link">
         <div>𝕏 <strong>Seguir no Twitter</strong><br><em>(em breve)</em></div>
@@ -131,12 +127,42 @@
     </div>
   </section>
 
-  <!-- Opcional: Rodapé -->
-  <!-- 
-  <footer>
-    <p>&copy; 2025 $VIRGIDREX. Todos os direitos reservados.</p>
-    <p><small>Disclaimer: Criptomoedas são investimentos de alto risco. Faça sua própria pesquisa.</small></p>
-  </footer> 
-  -->
+  <!-- Botão Adicionar à MetaMask -->
+  <div style="text-align: center; margin: 80px 0;">
+    <h2>Adicione o Token $VIRGIDREX à sua MetaMask</h2>
+    <img src="https://raw.githubusercontent.com/reservas2/virgidrex-site/main/logo.png" alt="VIRGIDREX Logo" width="100" style="margin: 20px auto;" />
+    <br>
+    <button onclick="addToken()" style="font-size: 18px; padding: 12px 24px; background-color: #f7931a; color: white; border: none; border-radius: 8px; cursor: pointer;">
+      ➕ Adicionar à MetaMask
+    </button>
+  </div>
+
+  <script>
+    async function addToken() {
+      try {
+        const wasAdded = await window.ethereum.request({
+          method: 'wallet_watchAsset',
+          params: {
+            type: 'ERC20',
+            options: {
+              address: '0x65a7c8e82Ec011c168b6eF2968E2A0cc50194fE',
+              symbol: 'VIRGIDREX',
+              decimals: 18,
+              image: 'https://raw.githubusercontent.com/reservas2/virgidrex-site/main/logo.png',
+            },
+          },
+        });
+
+        if (wasAdded) {
+          alert('✅ VIRGIDREX adicionado à sua MetaMask!');
+        } else {
+          alert('❌ Ação cancelada.');
+        }
+      } catch (error) {
+        console.error(error);
+        alert('❌ Erro ao adicionar token.');
+      }
+    }
+  </script>
 </body>
 </html>
